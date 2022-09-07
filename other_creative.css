@@ -1,0 +1,35 @@
+.logo_banner {
+    
+}
+
+.navigation_links {
+    position: absolute;
+    left: 1100px;
+    top: 50px;
+}
+
+button {
+    background-color: #003d99; 
+    border: 2px solid white;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 10px;
+    font-size: 16px;
+    transition-duration: 0.1s;
+  }
+
+  button:hover {
+    background-color: white; 
+    border: 2px solid #003d99;
+    color: #003d99;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 10px;
+    font-size: 16px;
+    transition-duration: 0.1s;
+  }
