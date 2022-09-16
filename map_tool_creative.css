@@ -1,7 +1,3 @@
-.logo_banner {
-    
-}
-
 .map_tool {
     background-image: url('images/find_me.png');
     align-self: center;
@@ -9,7 +5,7 @@
 
 .navigation_links {
     position: absolute;
-    left: 1100px;
+    right: 100px;
     top: 50px;
 }
 
