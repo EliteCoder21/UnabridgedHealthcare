@@ -43,8 +43,7 @@ button:hover {
 }
 
 .typing_animation_wrapper {
-  height: 0vh;
-  /*This part is important for centering*/
+  /*This part is important for centering */
   display: grid;
   place-items: center;
   color: black;
@@ -80,47 +79,50 @@ Catachaphrase/Introduction
   background-image: url('https://www.zocalopublicsquare.org/wp-content/uploads/2019/07/10.7.19-Event-Image.jpg');
   background-repeat: no-repeat;
   background-size: cover;
-  height: 900px;
-  width: 100%;
-  position: absolute;
-  top: 100px;
+  grid-column: span 2;
+  grid-row: 1;
 }
 
 .catchaphrase_text {
   text-align: center;
-  margin-right: 20px;
-  margin-top: 270px;
+}
+
+/* grid layout */
+.blocks {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 50px;
+  margin-left: 50px;
+  margin-right: 50px;
+  grid-auto-rows: minmax(100px, auto);
 }
 
 /*
 Mission statement
 */
 .our_mission {
-  position: absolute;
   background-color: #003d99;
-  top: 850px;
-  width: 100%;
-  
+  grid-column: 1;
+  grid-row: 2;
 }
 
 /*
 Services
 */
 .our_services {
-  position: absolute;
   background-image: url('images/WIN_20220824_10_47_49_Pro.jpg');
-  top: 1470px;
-  width: 100%;
   background-repeat: no-repeat;
+  background-size: cover;
+  grid-column: 2;
+  grid-row: 2;
 }
 
 /*
 Partners
 */
 .our_partners {
-  position: absolute;
   background-color: #003d99;
-  top: 2190px;
-  width: 100%;
+  grid-column: span 2;
+  grid-row: 3;
 }
 
