@@ -5,9 +5,9 @@
 }
 
 button {
-    background-color: #003d99; 
-    border: 2px solid white;
-    color: white;
+    background-color: white; 
+    border: 2px solid #003d99;
+    color: #1a1009;
     padding: 15px 32px;
     text-align: center;
     text-decoration: none;
@@ -18,9 +18,9 @@ button {
   }
 
 button:hover {
-    background-color: white; 
-    border: 2px solid #003d99;
-    color: #003d99;
+    background-color: #758db0; 
+    border: 2px solid white;
+    color: white;
     padding: 15px 32px;
     text-align: center;
     text-decoration: none;
@@ -31,14 +31,17 @@ button:hover {
 }
 
 .text_titles{
-  color: #cc5200;
-  font-size: 100px;
-  margin-left: 40px;
+  color: #1a1009;
+  font-size: 40px;
+  margin-left: 120px;
+  margin-right: 120px;
+  text-align: center;
+  background-color: #758db0; 
 }
 
 .text_info {
   color: white;
-  font-size: 50px;
+  font-size: 30px;
   margin-left: 40px;
 }
 
@@ -47,7 +50,7 @@ button:hover {
   display: grid;
   place-items: center;
   color: black;
-  font-size: 50px;
+  font-size: 20px;
 }
 
 .typing_animation {
@@ -92,16 +95,38 @@ Catachaphrase/Introduction
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 50px;
-  margin-left: 50px;
-  margin-right: 50px;
+  margin-left: 100px;
+  margin-right: 100px;
   grid-auto-rows: minmax(100px, auto);
+}
+
+.reveal{
+  opacity: 0;
+  transform: translateY(50px);
+}
+
+.reveal.active {
+  animation: slowMove 2s;
+  opacity: 100;
+  transform: translateY(0px);
+}
+
+@keyframes slowMove {
+  0% {
+    opacity: 50;
+    transform: translateY(50px);
+  }
+  100% {
+    opacity: 100;
+    transform: translateY(0px);
+  }
 }
 
 /*
 Mission statement
 */
 .our_mission {
-  background-color: #003d99;
+  background-color: #758db0;
   grid-column: 1;
   grid-row: 2;
 }
@@ -110,7 +135,7 @@ Mission statement
 Services
 */
 .our_services {
-  background-image: url('images/WIN_20220824_10_47_49_Pro.jpg');
+  background-color: #758db0;
   background-repeat: no-repeat;
   background-size: cover;
   grid-column: 2;
@@ -121,7 +146,7 @@ Services
 Partners
 */
 .our_partners {
-  background-color: #003d99;
+  background-color: #758db0;
   grid-column: span 2;
   grid-row: 3;
 }

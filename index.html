@@ -6,7 +6,7 @@
     <title>Healthcare for Immigrants</title>
 
     <!--Logo-->
-    <div class='logo_banner' style="background-image: url('https://images.sharefaith.com/images/3/1324685251858_149/img_mouseover3.jpg');">
+    <div class='logo_banner'>
         
         <img
             src="images/Screenshot 2022-09-05 103220.png"
@@ -35,33 +35,33 @@
   </head>
   <body>    
     <!--Cachaphrase + Image + Learn More-->
-    
-
-    <div class="blocks"> 
-        <div class='catchaphrase'>
-            <div class='catchaphrase_text'>
-                <h2 class='text_titles'>UNABRIDIGED HEALTHCARE</h2>
-                <div class='typing_animation_wrapper'>
-                    <p class='typing_animation'>Help the Helpless!</p>
-                </div>
+    <div class='catchaphrase'>
+        <div class='catchaphrase_text'>
+            <h2 class='text_titles'>UNABRIDIGED HEALTHCARE</h2>
+            <div class='typing_animation_wrapper'>
+                <p class='typing_animation'>Help the Helpless!</p>
             </div>
         </div>
+    </div>
+
+    <div class="blocks"> 
+        
     
         <a></a>
         
-        <div class="our_mission">
+        <div class="our_mission reveal">
             <h2 class='text_titles'>Our Mission</h2>
             <p class='text_info'>STATISTIC ABOUT IMMIGRANT HEALTHCARE. As students of Interlake High School, it is our aim to expand access to healthcare for immigrants in the form of providing information regarding the various facilities in Seattle, Bellevue, and the surrounding areas. ADD MORE! </p>
         </div>
     
         <!--Our services + Link to service webpage-->
-        <div class="our_services">
+        <div class="our_services reveal">
             <h2 class='text_titles'>Our Services</h2>
             <p class='text_info'>Our services include a physician search service, an overview of the medical programs offerred by difference institutions, and information on citizenship. Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita recusandae, beatae illum ut veniam blanditiis aliquam nesciunt reprehenderit deserunt nobis voluptatum, alias eligendi laboriosam velit tempora aperiam molestias? Voluptas, soluta. </p>
         </div>
     
         <!--Partner Organizations-->
-        <div class="our_partners">
+        <div class="our_partners reveal">
             <h2 class='text_titles'>Our Partners</h2>
             <a class='partner_logos'>
                 <img
@@ -82,6 +82,22 @@
         </div>
     </div>
 
+    <script type="text/javascript">
+        window.addEventListener('scroll', reveal);
+        function reveal() {
+            var reveals = document.querySelectorAll('.reveal')
+            var windHeight = window.innerHeight;
+            for (let i = 0; i < reveals.length; i++) {
+                var realtop = reveals[i].getBoundingClientRect().top;
+                if (realtop < 1000) {
+                    reveals[i].classList.add('active');
+                }
+                else {
+                    reveals[i].classList.remove('active');
+                }
+            }  
+        }
+    </script>
     <!--Simple Rundown of CAS Project-->
     
 
