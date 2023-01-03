@@ -60,7 +60,9 @@ body {
   display: contents;
 }
 .home-image {
-  height: 2rem;
+  height: 100px;
+  width: 100px;
+  opacity: 0.8;
   text-decoration: none;
 }
 .home-nav {
@@ -161,6 +163,7 @@ body {
   padding-left: 50px;
   padding-right: 50px;
   justify-content: space-between;
+  opacity: 0.8;
 }
 .home-container4 {
   flex: 0 0 auto;
@@ -175,9 +178,11 @@ body {
   border-radius: 40px;
   flex-direction: column;
   background-color: #f0d8e5;
+  opacity: 0.8;
+  
 }
 .home-text02 {
-  color: rgb(253, 251, 251);
+  color: rgb(0, 0, 0); 
   font-size: 30px;
   align-self: center;
   font-family: Comic Sans MS;
@@ -202,10 +207,10 @@ body {
   border-width: 2px;
   border-radius: 40px;
   flex-direction: column;
-  background-color: #d7de0d;
+  background-color: #f0d8e5;
 }
 .home-text08 {
-  color: rgb(253, 251, 251);
+  color: rgb(0, 0, 0);
   font-size: 30px;
   align-self: center;
   font-family: Comic Sans MS;
@@ -241,10 +246,11 @@ body {
   border-radius: 40px;
   flex-direction: column;
   justify-content: flex-start;
-  background-color: #08859e;
+  background-color: #93d7f5;
+  opacity: 0.8;
 }
 .home-text15 {
-  color: rgb(253, 251, 251);
+  color: rgb(0, 0, 0);
   font-size: 30px;
   align-self: center;
   font-family: Comic Sans MS;
